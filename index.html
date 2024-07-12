@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <div class="container">
+        <form action="registro.php" method="post" class="row g-3">
+            <div class="header">
+                <h1>Formulario de registro</h1>
+            </div>
+            <div class="row" style="padding-top: 3rem;">
+                <div class="col">
+                  <input type="text" name="Nombre1" class="form-control" placeholder="Primer nombre" aria-label="Primer nombre">
+                </div>
+                <div class="col">
+                  <input type="text" name="Nombre2" class="form-control" placeholder="Segundo nombre" aria-label="Segundo nombre">
+                </div>
+              </div>
+              <div class="row g-3">
+                <div class="col">
+                  <input type="text" name="Appa" class="form-control" placeholder="Apellido paterno" aria-label="Apellido paterno">
+                </div>
+                <div class="col">
+                  <input type="text" name="Apma" class="form-control" placeholder="Apellido materno" aria-label="Apellido materno">
+                </div>
+              </div>
+
+            <div class="col-md-6">
+
+            <div class="col-12">
+                    <label for="inputAddress" class="form-label">Direccion</label>
+                    <input type="text" name="Direccion" class="form-control" id="inputAddress" placeholder="San Miguel 123">
+            </div>
+
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="inputState" class="form-select" name="estado">
+                    <option value="no">Seleccione uno...</option>
+                    <option value="Aguascalientes">Aguascalientes</option>
+                    <option value="Baja California">Baja California</option>
+                    <option value="Baja California Sur">Baja California Sur</option>
+                    <option value="Campeche">Campeche</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Chihuahua">Chihuahua</option>
+                    <option value="CDMX">Ciudad de México</option>
+                    <option value="Coahuila">Coahuila</option>
+                    <option value="Colima">Colima</option>
+                    <option value="Durango">Durango</option>
+                    <option value="Estado de México">Estado de México</option>
+                    <option value="Guanajuato">Guanajuato</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Hidalgo">Hidalgo</option>
+                    <option value="Jalisco">Jalisco</option>
+                    <option value="Michoacán">Michoacán</option>
+                    <option value="Morelos">Morelos</option>
+                    <option value="Nayarit">Nayarit</option>
+                    <option value="Nuevo León">Nuevo León</option>
+                    <option value="Oaxaca">Oaxaca</option>
+                    <option value="Puebla">Puebla</option>
+                    <option value="Querétaro">Querétaro</option>
+                    <option value="Quintana Roo">Quintana Roo</option>
+                    <option value="San Luis Potosí">San Luis Potosí</option>
+                    <option value="Sinaloa">Sinaloa</option>
+                    <option value="Sonora">Sonora</option>
+                    <option value="Tabasco">Tabasco</option>
+                    <option value="Tamaulipas">Tamaulipas</option>
+                    <option value="Tlaxcala">Tlaxcala</option>
+                    <option value="Veracruz">Veracruz</option>
+                    <option value="Yucatán">Yucatán</option>
+                    <option value="Zacatecas">Zacatecas</option>
+                </select>
+              </div>
+
+            <fieldset class="row mb-3" style="padding-top: 3rem;">
+                <legend class="col-form-label col-sm-2 pt-0">Genero</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="gridRadios1" value="Masculino">
+                    <label class="form-check-label" for="gridRadios1">
+                      Masculino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="gridRadios2" value="Femenino">
+                    <label class="form-check-label" for="gridRadios2">
+                      Femenino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="gridRadios3" value="Otro">
+                    <label class="form-check-label" for="gridRadios3">
+                      Otro
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              
+              
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Matricula</label>
+                <input type="text" class="form-control" id="inputMatricula" name="Matri">
+              </div>
+             
+              <div class="col-md-3">
+                <label for="inputZip" class="form-label">Cuatrimestre</label>
+                <input type="text" class="form-control" id="inputCuatri" name="Cuatri">
+              </div>
+
+              <div>
+                <label for="inputEmail4" class="form-label">Carrera</label>
+                <input type="text" class="form-control" id="inputCarrera" name="Car">
+              </div>
+              
+
+            <div>
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" name="email">
+            </div>
+            
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
